@@ -264,36 +264,7 @@
   </section>
 
   <!-- Visualization of Block Frequency Among Competitors -->
-  <section class="max-w-4xl mx-auto px-4 py-10 bg-white shadow-card rounded-xl my-8">
-    <h2 class="text-2xl bright mb-4"><i class="fa-solid fa-chart-bar icon-bullet"></i>Какие блоки встречаются чаще всего у конкурентов?</h2>
-    <canvas id="blockFreqChart" height="140"></canvas>
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        new Chart(document.getElementById('blockFreqChart'), {
-          type: 'bar',
-          data: {
-            labels: ['Заголовок', 'Ввод', 'Возраст', 'Онлайн-способы', 'Оффлайн-способы', 'Платформы', 'Таблица', 'Родителям', 'Вывод'],
-            datasets: [{
-              label: 'Частота появления (%)',
-              data: [100, 100, 90, 100, 90, 80, 40, 60, 70],
-              backgroundColor: ['#4f46e5','#4f46e5','#06b6d4','#3b82f6','#1d4ed8','#0891b2','#22d3ee','#d946ef','#f59e42'],
-            }]
-          },
-          options: {
-            plugins: {
-              legend: {display: false}
-            },
-            scales: {
-              y: { beginAtZero: true, max: 120 }
-            },
-            responsive: true,
-            maintainAspectRatio: false
-          }
-        });
-      });
-    </script>
-  </section>
-
+  
   <!-- Parents Guidance -->
   <section id="parents" class="max-w-4xl mx-auto px-4 py-10 bg-white shadow-card rounded-xl my-8">
     <h2 class="text-2xl bright mb-4"><i class="fa-solid fa-heart icon-bullet"></i>Рекомендации родителям школьников</h2>
